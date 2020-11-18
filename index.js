@@ -45,8 +45,8 @@ Use the copy function below to do the following:
     2. Return a copy of the received array  
 */
 
-function copy(originalFlavors){
-    const newArray = [...originalFlavors];
+function copy(flavorArray){
+    const newArray = [...flavorArray];
     return newArray;
 }
 
@@ -67,12 +67,13 @@ For Example: is31Flavors(originalFlavors) will return true if your code is worki
 */
 
 
-function is31Flavors(array){
-   if (array.length === 31) {
-       return true;
-   } else {
-       return false;
-   }
+function is31Flavors(flavorArray){ 
+    if (flavorArray.length === 31) {
+        return true;
+    } else {
+        return false;
+    // return (flavorArray.length === 31) ? true : false; 
+}
 }
 
 is31Flavors(originalFlavors);
@@ -108,10 +109,12 @@ Use the removeLastFlavor function below to do the following:
     For example: running removeLastFlavor(originalFlavors) would return ["Rainbow Sherbert", "Banana Nut Fudge",..."Vanilla"]
 */
 
-function removeLastFlavor(/*your code here*/){
-   /*your code here*/
+function removeLastFlavor(array){
+    array.pop();
+    return array;
 }
 
+removeLastFlavor(originalFlavors);
 
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 5: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀
